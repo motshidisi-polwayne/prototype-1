@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: rgb(59, 57, 53);
+    padding: 0 60px;
+    height: 100vh;
+}*/
+
+.containers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+    padding-top:6rem ;
+}
+.form{
+    
+    width:100% ;
+    max-width: 460px;
+    background-color: beige;
+    box-shadow: 0 5px 10px rgba(19, 20, 16, 0.842);
+    border-radius: 10px;
+    margin-top: -20px;
+    
+    
+}
+.forms .field{
+    padding: 10px; 
+}
+.field .inputs{
+    margin-top: 10px;
+    height: 40px;
+    position: relative;
+    width: 100%;
+ 
+}
+.inputs input{
+    height: 100%;
+    width: 100%;
+}
+
+/*newstyles*/
+
+section{
+width: 100%;
+max-width: 430px;
+min-height: 400px;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+justify-content: flex-start;
+background-color: rgba(189, 255, 255, 0.904) ;
+
+}
+
+form{
+    padding-bottom: 1rem;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+input[type="text"],
+input [type="password"],
+input[type="email"]
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+
+}
+
+label,
+button{
+    margin-top:1rem;
+}
+
+button{
+    padding: 0.5rem;
+}
+
+.instructions{
+    font-size: 0.7rem;
+    background: black;
+    color: white;
+    position: relative;
+    bottom: -10px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+.instructions>svg{
+    margin-right: 0.25rem;
+}
+.offscreen{
+   display: none;
+}
+
+.valid{
+    color: green;
+    margin-left: 0.25rem;
+}
+.invalid{
+    color: red;
+}
+.errmsg{
+    background-color: rgba(240, 128, 152, 0.904);
+    color:rgb(82, 12, 12);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.line{
+    display: inline-block;
+}
+.hide{
+    display: none;
+}
+@media only screen and (max-width:769px){
+    .instructions{
+        font-size: 1rem;
+    
+}
+
+*{
+    font-size: 1rem;
+    font-weight:300;
+   
+}
+}
